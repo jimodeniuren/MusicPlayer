@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#EC7E7E"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/notification_privious"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/previous"
+        android:layout_marginEnd="10dp"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/notification_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/play"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/notification_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/pause"
+        android:layout_marginEnd="10dp"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/notification_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/next"
+        android:layout_marginEnd="10dp"
+        tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/notification_cancel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cancel"
+        tools:ignore="ButtonStyle" />
+
+
+</LinearLayout>
