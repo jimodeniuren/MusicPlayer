@@ -134,6 +134,7 @@ public class PlayerService extends Service {
             mp.release();
         }catch (Exception e){}
         unregisterReceiver(playMusicReceiver);
+        notificationManager.cancel(123);
         stopSelf();
         return super.onUnbind(intent);
     }

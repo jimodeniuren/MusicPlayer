@@ -32,6 +32,7 @@ public class MusicPlaying extends AppCompatActivity{
     private PlayerService.MusicBinder musicBinder;
     private Intent bindIntent;
     private Timer timer;
+    private int p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,10 +84,9 @@ public class MusicPlaying extends AppCompatActivity{
 
             @Override
             public void run() {
-
-                //获取歌曲的进度
-                int p = musicBinder.currentProgress();
-
+                try {
+                    p = musicBinder.currentProgress();
+                }catch (Exception e){}
                 //将获取歌曲的进度赋值给seekbar
                 seekBar.setProgress(p);
             }
